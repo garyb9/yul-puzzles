@@ -11,25 +11,25 @@ contract CalculatorTest is Test {
         c = new Calculator();
     }
 
-    function test_Add(uint256 x, uint256 y) public {
+    function test_Add(uint256 x, uint256 y) public view {
         vm.assume(x < type(uint256).max / 2 && y < type(uint256).max / 2);
         uint256 r = c.add(x, y);
         assertEq(r, x + y);
     }
 
-    function test_Sub(uint256 x, uint256 y) public {
+    function test_Sub(uint256 x, uint256 y) public view {
         vm.assume(x > y);
         uint256 r = c.sub(x, y);
         assertEq(r, x - y);
     }
 
-    function test_Mul(uint256 x, uint256 y) public {
+    function test_Mul(uint256 x, uint256 y) public view {
         vm.assume(y > 0 && x <= type(uint256).max / y);
         uint256 r = c.mul(x, y);
         assertEq(r, x * y);
     }
 
-    function test_Div(uint256 x, uint256 y) public {
+    function test_Div(uint256 x, uint256 y) public view {
         vm.assume(y > 0);
         uint256 r = c.div(x, y);
         assertEq(r, x / y);
