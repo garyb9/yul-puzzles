@@ -11,7 +11,7 @@ contract KeccakFirstCalldataTest is Test {
         c = new KeccakFirstCalldata();
     }
 
-    function test_KeccakFirstCalldata(uint256 x, uint256 y, uint256 z) public {
+    function test_KeccakFirstCalldata(uint256 x, uint256 y, uint256 z) public view {
         bytes32 r = c.main(x, y, z);
         assertEq(r, keccak256(abi.encode(x)));
     }

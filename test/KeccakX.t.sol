@@ -11,7 +11,7 @@ contract keccakXTest is Test {
         c = new keccakX();
     }
 
-    function test_keccakX(uint256 x) public {
+    function test_keccakX(uint256 x) public view {
         bytes32 r = c.main(x);
         assertEq(r, keccak256(abi.encode(x)));
     }
