@@ -8,7 +8,6 @@ contract Approve {
             // your code here
             // approve "token" to spend "amount"
             // hint: approve has function selector 0x095ea7b3 and signature "approve(address,uint256)"
-       }
+        }
     }
 }
-

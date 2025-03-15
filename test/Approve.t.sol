@@ -6,14 +6,13 @@ import {Approve} from "../src/Approve.sol";
 import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract Token is ERC20 {
-    constructor() ERC20("RareSkills", "RS") {
-
-    }
+    constructor() ERC20("RareSkills", "RS") {}
 }
 
 contract ApproveTest is Test {
     Approve public c;
     Token public token;
+
     function setUp() public {
         c = new Approve();
         token = new Token();

@@ -14,6 +14,7 @@ contract Token is ERC20 {
 contract TransferFromTest is Test {
     TransferFrom public c;
     Token public token;
+
     function setUp() public {
         token = new Token();
         c = new TransferFrom(address(token));

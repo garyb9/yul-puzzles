@@ -6,9 +6,7 @@ import {BalanceOf} from "../src/BalanceOf.sol";
 import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract Token is ERC20 {
-    constructor() ERC20("RareSkills", "RS") {
-
-    }
+    constructor() ERC20("RareSkills", "RS") {}
 
     function mint(address to, uint256 amount) external {
         _mint(to, amount);
@@ -18,6 +16,7 @@ contract Token is ERC20 {
 contract BalanceOfTest is Test {
     BalanceOf public c;
     Token public token;
+
     function setUp() public {
         c = new BalanceOf();
         token = new Token();

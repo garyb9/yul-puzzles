@@ -2,7 +2,6 @@
 pragma solidity ^0.8.13;
 
 contract SendEther {
-
     function main(address payable to, uint256 amount) external payable {
         assembly {
             // your code here

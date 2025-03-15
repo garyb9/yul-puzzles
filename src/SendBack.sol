@@ -2,7 +2,6 @@
 pragma solidity ^0.8.13;
 
 contract SendBack {
-
     fallback() external payable {
         assembly {
             // your code here

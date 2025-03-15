@@ -16,7 +16,7 @@ contract SimpleEtherTest is Test {
         vm.assume(to != address(this) && uint160(to) > uint160(100) && to != address(c));
         vm.assume(amount > 0);
         vm.assume(to.balance == 0);
-        
+
         vm.deal(address(c), amount);
         c.main(payable(to), amount);
         assertEq(to.balance, amount);

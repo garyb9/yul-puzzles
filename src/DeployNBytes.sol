@@ -10,6 +10,6 @@ contract DeployNBytes {
             // hint: use mstore8 to target a single byte
             // hint: because we only care about the size, you can simply return that region
             //       of memory and not care about what is inside it
-       }
+        }
     }
 }

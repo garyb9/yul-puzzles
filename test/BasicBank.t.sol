@@ -6,6 +6,7 @@ import {BasicBank} from "../src/BasicBank.sol";
 
 contract BasicBankTest is Test {
     BasicBank public c;
+
     event Deposit(address indexed depositor, uint256 amount);
     event Withdraw(address indexed withdrawer, uint256 amount);
 
@@ -53,7 +54,5 @@ contract BasicBankTest is Test {
         assertEq(c.balances(address(this)), 10);
     }
 
-    receive() external payable {
-
-    }
+    receive() external payable {}
 }

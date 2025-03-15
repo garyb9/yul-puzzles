@@ -20,4 +20,3 @@ contract TransferFrom {
         }
     }
 }
-

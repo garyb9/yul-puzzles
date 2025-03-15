@@ -11,7 +11,6 @@ contract BalanceOf {
             // hint: balanceOf has function selector 0x70a08231 and signature "balanceOf(address)"
             // hint: since this is a view function, you should use staticcall
             // hint: use `returndatacopy` to copy the return data to the memory
-       }
+        }
     }
 }
-

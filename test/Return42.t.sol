@@ -11,7 +11,7 @@ contract Return42Test is Test {
         c = new Return42();
     }
 
-    function test_Return42() public {
+    function test_Return42() public view {
         uint256 r = c.main();
         assertEq(r, 42);
     }
