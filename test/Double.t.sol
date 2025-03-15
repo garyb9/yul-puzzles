@@ -11,7 +11,7 @@ contract DoubleTest is Test {
         c = new Double();
     }
 
-    function test_Double(uint256 x) public {
+    function test_Double(uint256 x) public view {
         vm.assume(x < type(uint256).max / 2);
         uint256 r = c.main(x);
         assertEq(r, 2 * x);

@@ -6,6 +6,7 @@ import {SimpleCallWithValue} from "../src/SimpleCallWithValue.sol";
 
 contract T {
     bool public x = false;
+
     function foo() external payable {
         x = true;
     }

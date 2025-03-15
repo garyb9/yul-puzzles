@@ -15,12 +15,12 @@ Now repeat this with the other puzzles.
 Go through the puzzles sequentially 
 
 0. [ReturnBool](./src/ReturnBool.sol) (_solved_)
-1. [SimpleRevert](./src/SimpleRevert.sol)
-2. [RevertWithSelector](./src/RevertWithSelector.sol)
-3. [Return42](./src/Return42.sol) 
-4. [RevertWithError](./src/RevertWithError.sol) 
-5. [RevertWithSelectorPlusArgs](./src/RevertWithSelectorPlusArgs.sol) 
-6. [RevertWithPanic](./src/RevertWithPanic.sol) 
+1. [SimpleRevert](./src/SimpleRevert.sol) (_solved_)
+2. [RevertWithSelector](./src/RevertWithSelector.sol) (_solved_)
+3. [Return42](./src/Return42.sol)  (_solved_)
+4. [RevertWithError](./src/RevertWithError.sol) (_solved_)
+5. [RevertWithSelectorPlusArgs](./src/RevertWithSelectorPlusArgs.sol) (_solved_)
+6. [RevertWithPanic](./src/RevertWithPanic.sol) (_solved_)
 7. [Double](./src/Double.sol) 
 8. [Calculator](./src/Calculator.sol) 
 9. [DoubleOrNothing](./src/DoubleOrNothing.sol) 
