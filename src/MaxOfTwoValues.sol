@@ -16,7 +16,7 @@ contract MaxOfTwoValues {
                 mstore(0x00, y)
                 return(0x00, 0x20)
             }
-                // if x < y, return y
+            // if x < y, return y
             default {
                 mstore(0x00, x)
                 return(0x00, 0x20)

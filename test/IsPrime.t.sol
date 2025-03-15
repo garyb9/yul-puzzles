@@ -11,7 +11,7 @@ contract IsPrimeTest is Test {
         c = new IsPrime();
     }
 
-    function test_IsPrime() public {
+    function test_IsPrime() public view {
         uint8[10] memory a = [23, 30, 15, 17, 19, 12, 18, 31, 1, 43];
         bool[10] memory b = [true, false, false, true, true, false, false, true, false, true];
 
