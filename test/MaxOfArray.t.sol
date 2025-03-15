@@ -23,7 +23,7 @@ contract MaxOfArrayTest is Test {
         }
     }
 
-    function s(uint256[] memory v) internal returns (uint256) {
+    function s(uint256[] memory v) internal pure returns (uint256) {
         uint256 e = v[0];
         for (uint256 i = 1; i < v.length; i++) {
             if (v[i] > e) {
